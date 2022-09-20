@@ -3,26 +3,35 @@
 
 
 /* Paleta de cores
+--------------------------
 - azul: #027373;
 - verde: #038C7F;
 - verde claro: #ADD9D1;
 - rosa: #D95252;
 - preto: #0D0D0D;
+--------------------------
 */
 
+/* Variavéis de cores, fontes */
 :root {
     --background-body: #027373;
     --background-section: #ADD9D1;
+    --background-buttom: #D95252;
+    --cor-do-degrade: #038C7F;
+    --cor-da-letra: #0D0D0D;
     --fonte-geral: 'Sriracha', cursive;
 }
 
+/* Configurações Gerais */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: var(--fonte-geral);
+    color: var(--cor-da-letra);
 }
 
+/* Configurações Genéricas */
 html, body {
     background-color: var(--background-body);
     height: 100vh;
@@ -46,6 +55,8 @@ main {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
 }
 
 #login #imagem {
