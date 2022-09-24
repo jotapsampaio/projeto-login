@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaquereis.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Projeto Login</title>
 </head>
 <body>
@@ -19,8 +20,22 @@
                 <p>
                     Seja Bem Vindo (a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                 </p>
-                <form action="login" method="post">
-
+                <form action="login" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="mail" id="imail" required autocomplete="email" maxlength="30" placeholder="seu email">
+                        <label for="imail">Email</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">key</span>
+                        <input type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="sua senha" minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci minha senha
+                        <span class="material-icons">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
