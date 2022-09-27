@@ -10,6 +10,7 @@
 ----------------------------------------------
 */
 
+/* Configurações para tablets */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     body {
         background-image: linear-gradient(to top, var(--background-section), var(--cor-do-degrade), var(--background-body));
@@ -17,6 +18,7 @@
 
     #login {
         width: 70vw;
+        height: 310px;
     }
 
     #login #imagem {
@@ -32,6 +34,7 @@
     }
 }
 
+/* Configurações para desktops */
 @media screen and (min-width: 1025px) {
     body {
         background-image: linear-gradient(to top, var(--background-section), var(--cor-do-degrade), var(--background-body));
@@ -39,6 +42,7 @@
 
     #login {
         width: 800px;
+        height: 390px;
     }
 
     #login #imagem {
@@ -53,11 +57,12 @@
         height: 100%;
     }
 
-    #formulario h1 {
+    #formulario h1 {    
         font-size: 2em;
     }
     
     #formulario p {
         font-size: 1.2em;
+        margin-bottom: 20px;
     }
 }

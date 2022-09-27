@@ -74,8 +74,8 @@ main {
 .campo {
     background-color: #D95252;
     height: 40px;
-    border-radius: 5px;
-    margin: 5px 0;
+    border-radius: 8px;
+    margin: 5px 0px;
 }
 
 #formulario h1 {
@@ -85,6 +85,27 @@ main {
 
 #formulario p {
     font-size: 0.8em;
+}
+
+.campo span {
+    color: #fff;
+    height: 100%;
+    width: 30px;
+    padding: 5px;
+}
+
+.campo input {
+    background-color: #7feeda;
+    height: 100%;
+    width: calc(100% - 34.2px);
+    border-radius: 8px;
+    padding: 4px;
+    font-size: 1em;
+    transform: translateY(-3.5px);
+}
+
+.campo input:focus-within {
+    background-color: #fff;
 }
 
 form input[type=submit] {
@@ -100,7 +121,7 @@ form input[type=submit] {
 }
 
 form input[type=submit]:hover {
-    background-color: #194e44;
+    background-color: #1f695c;
     margin-left: 1.5px;
 }
 
